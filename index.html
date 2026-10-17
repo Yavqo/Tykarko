@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tykarko | Fully Autonomous AI Vehicles</title>
+  <meta name="description" content="Tykarko builds fully autonomous AI vehicles that pick you up, open the door for you, and drive themselves.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Shared car silhouette, recolored per section via --car-color -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="car" viewBox="0 0 620 210">
+      <ellipse cx="310" cy="186" rx="280" ry="12" fill="rgba(0,0,0,.35)"/>
+      <path fill="var(--car-color)" d="M38 146c0-20 18-32 52-37l104-12c40-28 100-46 172-46 62 0 112 18 154 46l46 9c22 5 34 18 34 36v14c0 6-4 10-10 10H48c-6 0-10-4-10-10z"/>
+      <path fill="rgba(10,14,20,.78)" d="M222 97c36-24 86-35 146-35 46 0 82 12 112 35z"/>
+      <path fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2" d="M60 128h500"/>
+      <rect x="548" y="118" width="26" height="6" rx="3" fill="#fff" opacity=".85"/>
+      <rect x="42" y="122" width="18" height="6" rx="3" fill="#e31937" opacity=".9"/>
+      <g>
+        <circle cx="150" cy="160" r="34" fill="#111"/>
+        <circle cx="150" cy="160" r="20" fill="#3a3f47"/>
+        <circle cx="150" cy="160" r="6" fill="#9aa1ab"/>
+        <circle cx="474" cy="160" r="34" fill="#111"/>
+        <circle cx="474" cy="160" r="20" fill="#3a3f47"/>
+        <circle cx="474" cy="160" r="6" fill="#9aa1ab"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#top" aria-label="Tykarko home">TYKARKO</a>
+    <nav class="nav-center" aria-label="Primary">
+      <a href="#one">Tykarko One</a>
+      <a href="#pickup">AI Pickup</a>
+      <a href="#doors">Smart Doors</a>
+      <a href="#autonomy">Autonomy</a>
+      <a href="#features">Features</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#support" class="hide-sm">Support</a>
+      <a href="#account" class="hide-sm">Account</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="drawer">Menu</button>
+    </div>
+  </header>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+    <a href="#one">Tykarko One</a>
+    <a href="#pickup">AI Pickup</a>
+    <a href="#doors">Smart Doors</a>
+    <a href="#autonomy">Autonomy</a>
+    <a href="#features">Features</a>
+    <a href="#reserve">Reserve</a>
+    <a href="#support">Support</a>
+    <a href="#account">Account</a>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <main id="top">
+    <section class="panel" id="one" style="--bg-top:#cfd6de;--bg-bottom:#7c8794;--car-color:#f4f5f7">
+      <div class="panel-text">
+        <h1>Tykarko One</h1>
+        <p>Fully Autonomous. No steering wheel required.</p>
+      </div>
+      <svg class="car" aria-hidden="true"><use href="#car"/></svg>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#reserve">Reserve Now</a>
+        <a class="btn btn-secondary" href="#autonomy">Watch the Demo</a>
+      </div>
+    </section>
+
+    <section class="panel" id="pickup" style="--bg-top:#1b2a3d;--bg-bottom:#0b1220;--car-color:#1d1f24" data-dark>
+      <div class="panel-text">
+        <h2>AI Pickup</h2>
+        <p>Tap once. Your Tykarko finds you, wherever you are.</p>
+      </div>
+      <div class="pin" aria-hidden="true"><span></span></div>
+      <svg class="car car-drive" aria-hidden="true"><use href="#car"/></svg>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#reserve">Reserve Now</a>
+        <a class="btn btn-secondary" href="#features">Learn More</a>
+      </div>
+    </section>
+
+    <section class="panel" id="doors" style="--bg-top:#e9e4dc;--bg-bottom:#a99e8e;--car-color:#8c1c24">
+      <div class="panel-text">
+        <h2>Smart Doors</h2>
+        <p>Recognizes you on approach and opens the door for you.</p>
+      </div>
+      <svg class="car" aria-hidden="true"><use href="#car"/></svg>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#reserve">Reserve Now</a>
+        <a class="btn btn-secondary" href="#features">Learn More</a>
+      </div>
+    </section>
+
+    <section class="panel" id="autonomy" style="--bg-top:#2b2f36;--bg-bottom:#0d0f12;--car-color:#2f6fd6" data-dark>
+      <div class="panel-text">
+        <h2>Full Autonomy</h2>
+        <p>Door to door, end to end. It handles the driving.</p>
+      </div>
+      <div class="road" aria-hidden="true"></div>
+      <svg class="car" aria-hidden="true"><use href="#car"/></svg>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#reserve">Experience Autonomy</a>
+        <a class="btn btn-secondary" href="#features">Safety Report</a>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <h2>Built to drive itself. Designed around you.</h2>
+      <div class="grid">
+        <article><h3>AI Pickup</h3><p>Summon from the app or by voice. It plans the route, parks, and waits at the curb.</p></article>
+        <article><h3>Door Opening</h3><p>Face and phone recognition open the right door as you walk up, then close it once you're seated.</p></article>
+        <article><h3>Autonomous Driving</h3><p>360° cameras, radar, and an onboard AI computer handle highways, city streets, and parking.</p></article>
+        <article><h3>Self-Parking &amp; Charging</h3><p>Drops you off, finds a spot, and plugs itself in when the battery runs low.</p></article>
+        <article><h3>Cabin Assistant</h3><p>Sets climate, seats, and music to your profile. Just ask it to change anything.</p></article>
+        <article><h3>Over-the-Air Updates</h3><p>New features and better driving arrive overnight, while it's parked.</p></article>
+      </div>
+      <dl class="stats">
+        <div><dt>0</dt><dd>Hands on the wheel</dd></div>
+        <div><dt>360°</dt><dd>Sensor coverage</dd></div>
+        <div><dt>24/7</dt><dd>On-demand pickup</dd></div>
+      </dl>
+    </section>
+
+    <section class="panel reserve" id="reserve" style="--bg-top:#f4f4f4;--bg-bottom:#d9d9d9;--car-color:#111">
+      <div class="panel-text">
+        <h2>Reserve Your Tykarko</h2>
+        <p>Be first in line when autonomous pickup comes to your city.</p>
+      </div>
+      <form class="reserve-form" id="reserveForm">
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" type="email" placeholder="Email address" required>
+        <button class="btn btn-primary" type="submit">Join the Waitlist</button>
+      </form>
+      <p class="form-msg" id="formMsg" role="status"></p>
+    </section>
+  </main>
+
+  <footer class="footer" id="support">
+    <span>Tykarko &copy; <span id="year"></span></span>
+    <a href="#">Privacy &amp; Legal</a>
+    <a href="#">Contact</a>
+    <a href="#">Careers</a>
+    <a href="#" id="account">Locations</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
