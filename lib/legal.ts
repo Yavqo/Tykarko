@@ -6,6 +6,8 @@ export const LEGAL = {
   address: "[Registered business address]",
   email: "[legal@your-domain.com]",
   privacyEmail: "[privacy@your-domain.com]",
+  supportEmail: "[support@your-domain.com]",
+  pressEmail: "[press@your-domain.com]",
   jurisdiction: "[State / country of governing law]",
   updated: "October 18, 2026",
 };

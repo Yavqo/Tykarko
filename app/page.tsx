@@ -30,7 +30,7 @@ const PANELS: Panel[] = [
     bg: ["#cfd6de", "#7c8794"],
     car: "#f4f5f7",
     primary: { label: "Reserve Now", href: "#reserve" },
-    secondary: { label: "Watch the Demo", href: "#autonomy" },
+    secondary: { label: "Explore Features", href: "#features" },
   },
   {
     id: "pickup",
@@ -64,8 +64,8 @@ const PANELS: Panel[] = [
     dark: true,
     lights: true,
     extras: ["scan", "road"],
-    primary: { label: "Experience Autonomy", href: "#reserve" },
-    secondary: { label: "Safety Report", href: "#features" },
+    primary: { label: "Reserve Now", href: "#reserve" },
+    secondary: { label: "Our Approach to Safety", href: "/safety" },
   },
 ];
 

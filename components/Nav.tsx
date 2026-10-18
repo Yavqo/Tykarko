@@ -54,11 +54,11 @@ export function Nav() {
           ))}
         </nav>
         <div className="nav-right">
-          <a href="#support" className="hide-sm">
-            Support
+          <a href="/safety" className="hide-sm">
+            Safety
           </a>
-          <a href="#support" className="hide-sm">
-            Account
+          <a href="/support" className="hide-sm">
+            Support
           </a>
           <button className="menu-btn" aria-expanded={open} aria-controls="drawer" onClick={() => setOpen(true)}>
             Menu
@@ -70,7 +70,7 @@ export function Nav() {
         <button className="drawer-close" aria-label="Close menu" onClick={close}>
           &times;
         </button>
-        {[...LINKS, { href: "/#reserve", label: "Reserve" }, { href: "#support", label: "Support" }].map((l) => (
+        {[...LINKS, { href: "/safety", label: "Safety" }, { href: "/#reserve", label: "Reserve" }, { href: "/support", label: "Support" }].map((l) => (
           <a key={l.label} href={l.href} onClick={close}>
             {l.label}
           </a>
