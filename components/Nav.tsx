@@ -4,11 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import { TykarkoMark, TykarkoWordmark } from "./Logo";
 
 const LINKS = [
-  { href: "#one", label: "Tykarko One" },
-  { href: "#pickup", label: "AI Pickup" },
-  { href: "#doors", label: "Smart Doors" },
-  { href: "#autonomy", label: "Autonomy" },
-  { href: "#features", label: "Features" },
+  { href: "/#one", label: "Tykarko One" },
+  { href: "/#pickup", label: "AI Pickup" },
+  { href: "/#doors", label: "Smart Doors" },
+  { href: "/#autonomy", label: "Autonomy" },
+  { href: "/#features", label: "Features" },
 ];
 
 export function Nav() {
@@ -42,7 +42,7 @@ export function Nav() {
   return (
     <>
       <header ref={navRef} className={`nav${onDark ? " on-dark" : ""}`}>
-        <a className="logo" href="#top" aria-label="Tykarko home">
+        <a className="logo" href="/" aria-label="Tykarko home">
           <TykarkoMark className="logo-mark" />
           <TykarkoWordmark className="logo-word" />
         </a>
@@ -70,7 +70,7 @@ export function Nav() {
         <button className="drawer-close" aria-label="Close menu" onClick={close}>
           &times;
         </button>
-        {[...LINKS, { href: "#reserve", label: "Reserve" }, { href: "#support", label: "Support" }].map((l) => (
+        {[...LINKS, { href: "/#reserve", label: "Reserve" }, { href: "#support", label: "Support" }].map((l) => (
           <a key={l.label} href={l.href} onClick={close}>
             {l.label}
           </a>

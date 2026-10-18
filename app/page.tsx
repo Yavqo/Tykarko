@@ -1,5 +1,6 @@
 import { Fragment, type CSSProperties, type ReactNode } from "react";
 import { Car } from "@/components/Car";
+import { Footer } from "@/components/Footer";
 import { TykarkoLogo, TykarkoMark, TykarkoWordmark } from "@/components/Logo";
 import { Nav } from "@/components/Nav";
 import { ReserveForm } from "@/components/ReserveForm";
@@ -203,14 +204,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="footer" id="support">
-        <TykarkoMark className="footer-mark" />
-        <span>Tykarko &copy; {new Date().getFullYear()}</span>
-        <a href="#">Privacy &amp; Legal</a>
-        <a href="#">Contact</a>
-        <a href="#">Careers</a>
-        <a href="#">Locations</a>
-      </footer>
+      <Footer />
     </>
   );
 }

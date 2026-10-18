@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Tykarko | Fully Autonomous AI Vehicles",
+  title: { default: "Tykarko | Fully Autonomous AI Vehicles", template: "%s | Tykarko" },
   description:
     "Tykarko builds fully autonomous AI vehicles that pick you up, open the door for you, and drive themselves.",
 };

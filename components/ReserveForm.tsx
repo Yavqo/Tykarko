@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, type FormEvent } from "react";
 
 // No backend yet: confirms locally and clears the field.
@@ -24,6 +25,10 @@ export function ReserveForm() {
           Join the Waitlist
         </button>
       </form>
+      <p className="form-consent">
+        By joining, you agree to our <Link href="/legal/terms">Terms</Link> and{" "}
+        <Link href="/legal/privacy">Privacy Policy</Link>.
+      </p>
       <p className="form-msg" role="status">
         {message}
       </p>
